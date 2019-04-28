@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chapter 8 : An awesome image grid</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<style>
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* grid-template-rows: 75px; */
+}
+img { width: 100%; }
+.horizontal { grid-column: span 2;}
+.vertical { grid-row: span 3; }
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+</style>
+<body>
+  <div class="container">
+    <div><img src="https://picsum.photos/100/75" /></div>
+    <div class="vertical"><img src="https://picsum.photos/100/300" /></div>
+    <div class="horizontal"><img src="https://picsum.photos/400/150" /></div>
+    <div><img src="https://picsum.photos/200/150" /></div>
+    <div><img src="https://picsum.photos/200/150" /></div>
+    <div class="big"><img src="https://picsum.photos/200/150" /></div>
+    <div><img src="https://picsum.photos/id/201/200/150" /></div>
+    <div class="vertical"><img src="https://picsum.photos/id/201/200/150" /></div>
+    <div><img src="https://picsum.photos/id/201/200/150" /></div>
+    <div class="horizontal"><img src="https://picsum.photos/id/201/200/150" /></div>
+    <div><img src="img/normal6.jpg" /></div>
+    <div class="big"><img src="img/big2.jpg" /></div>
+    <div><img src="img/normal7.jpg" /></div>
+    <div class="horizontal"><img src="img/horizontal3.jpg" /></div>
+    <div><img src="img/normal8.jpg" /></div>
+    <div class="big"><img src="img/big3.jpg" /></div>
+    <div><img src="img/normal9.jpg" /></div>
+    <div class="vertical"><img src="img/vertical3.jpg" /></div>
+  </div>
+  <div class="my-container">
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+    <div><img src=""></div>
+  </div>
+</body>
+
+</html>

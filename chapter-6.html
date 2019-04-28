@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chapter 6 : Auto-fit and minmax</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+  html,
+  body {
+    background-color: #ffeead;
+    margin: 10px;
+    font-size: 1.5em;
+    color: #ffeead;
+    /* margin: 0; */
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* border: 1px solid #000; */
+
+  }
+
+  .container>div:nth-child(1n) {
+    background-color: #96ceb4;
+  }
+
+  .container>div:nth-child(3n) {
+    background-color: #88d8b0;
+  }
+
+  .container>div:nth-child(2n) {
+    background-color: #ff6f69;
+  }
+
+  .container>div:nth-child(4n) {
+    background-color: #ffcc5c;
+  }
+
+</style>
+
+<body>
+  <div class="container">
+    <div class="col-1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iure?
+    </div>
+  </div>
+</body>
+
+</html>

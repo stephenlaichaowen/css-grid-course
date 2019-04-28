@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chapter 5 : Template areas</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+html,
+body {
+  background-color: #ffeead;
+  margin: 10px;
+  font-size: 1.5em;
+  color: #ffeead;
+}
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 
+    ". h h h h h h h h h h ."
+    "m m m c c c c c c c c ."
+    ". . f f f f f f f f f f";
+}
+.header { 
+  grid-area: h;
+}
+.menu { 
+  grid-area: m;
+}
+.content {
+  grid-area: c;
+}
+.footer {
+  grid-area: f;
+}
+.container>div:nth-child(1n) { background-color: #96ceb4; }
+.container>div:nth-child(3n) { background-color: #88d8b0; }
+.container>div:nth-child(2n) { background-color: #ff6f69; }
+.container>div:nth-child(4n) { background-color: #ffcc5c; }
+@media (max-width: 720px) {
+  .container {
+    grid-template-areas: 
+    ". h h h h h h h h h h h"
+    "m m m m m m m m m m m ."
+    ". c c c c c c c c c c c"
+    "f f f f f f f f f f f .";
+  }
+}
+</style>
+
+<body>
+  <div class="container">
+    <div class="header">
+      HEADER
+    </div>
+    <div class="menu">MENU</div>
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nemo perferendis quis ex quo pariatur optio labore, sapiente porro minus nam nisi inventore corrupti, maiores aspernatur velit impedit delectus dolore?
+      </p>
+    </div>
+    <div class="footer">FOOTER</div>
+  </div>
+</body>
+
+</html>
